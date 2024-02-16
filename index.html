@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEP</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Photo Editor</h1>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brighteness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flips</label>
+                    <div class="options">
+                        <button id="left"><img src="/assets/rotate-left.png" class="fa-solid fa-rotate-left"></img></button>
+                        <button id="right"><img src="/assets/rotate-right.png" class="fa-solid fa-rotate-right"></img></button>
+                        <button id="horizontal"><img src="/assets/flips-horizontal.jpg" class="bx bx-reflect-vertical"></img></button>
+                        <button id="vertical"><img src="/assets/flips-vertical.jpg" class="bx bx-reflect-horizontal"></img></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+    
+</body>
+</html>
